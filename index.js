@@ -2,11 +2,11 @@
  * Reverse Polish Notation Calculator
  */
 
-var arguments = process.argv.slice(2);
+var myArgs = process.argv.slice(2);
 
-var operand1 = parseInt(arguments[0]);
-var operand2 = parseInt(arguments[1]);
-var operator = arguments[2];
+var operand1 = parseInt(myArgs[0]);
+var operand2 = parseInt(myArgs[1]);
+var operator = myArgs[2];
 
 console.log('Calculating:', operand1, operand2, operator);
 
