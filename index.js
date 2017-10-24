@@ -16,7 +16,8 @@ switch (operator) {
   case '+':
     result = operand1 + operand2;
     break;
-  // Potentiation
+
+    // Potentiation
   case '^':
     result = Math.pow(operand1, operand2);
     break;
@@ -29,6 +30,11 @@ switch (operator) {
   // Divison
   case '/':
     result = operand1 / operand2;
+    break;
+
+  // Max-function
+  case 'max':
+    result = Math.max(operand1, operand2);
     break;
 
   default:
