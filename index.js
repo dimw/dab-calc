@@ -17,7 +17,7 @@ switch (operator) {
     result = operand1 + operand2;
     break;
 
-  // divison
+  // Divison
   case '/':
     result = operand1 / operand2;
     break;
