@@ -16,7 +16,7 @@ switch (operator) {
   case '+':
     result = operand1 + operand2;
     break;
-    
+
   // Subtraction
   case '-':
     result = operand1 - operand2;
@@ -26,6 +26,11 @@ switch (operator) {
   case '/':
     result = operand1 / operand2;
     break;
+
+  // Min function
+    case 'min':
+      result = Math.min(operand2, operand1);
+      break;
 
   default:
     console.error('Not implemented:', operator);
