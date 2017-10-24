@@ -16,6 +16,12 @@ switch (operator) {
   case '+':
     result = operand1 + operand2;
     break;
+
+  // Divison
+  case '/':
+    result = operand1 / operand2;
+    break;
+
   default:
     console.error('Not implemented:', operator);
 }
