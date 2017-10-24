@@ -16,7 +16,7 @@ switch (operator) {
   case '+':
     result = operand1 + operand2;
     break;
-    
+
   // Subtraction
   case '-':
     result = operand1 - operand2;
@@ -25,6 +25,11 @@ switch (operator) {
   // Divison
   case '/':
     result = operand1 / operand2;
+    break;
+
+  // max-function
+  case 'max':
+    result = Math.max(operand1, operand2);
     break;
 
   default:
