@@ -32,6 +32,11 @@ switch (operator) {
     result = operand1 / operand2;
     break;
 
+  // Min function
+  case 'min':
+    result = Math.min(operand2, operand1);
+    break;
+
   // Max-function
   case 'max':
     result = Math.max(operand1, operand2);
