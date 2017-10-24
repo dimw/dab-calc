@@ -28,9 +28,14 @@ switch (operator) {
     break;
 
   // Min function
-    case 'min':
-      result = Math.min(operand2, operand1);
-      break;
+  case 'min':
+    result = Math.min(operand2, operand1);
+    break;
+
+  // Max-function
+  case 'max':
+    result = Math.max(operand1, operand2);
+    break;
 
   default:
     console.error('Not implemented:', operator);
