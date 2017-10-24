@@ -16,6 +16,11 @@ switch (operator) {
   case '+':
     result = operand1 + operand2;
     break;
+    
+  // Subtraction
+  case '-':
+    result = operand1 - operand2;
+    break;
 
   // Divison
   case '/':
