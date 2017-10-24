@@ -27,7 +27,7 @@ switch (operator) {
     result = operand1 / operand2;
     break;
 
-  // max-function
+  // Max-function
   case 'max':
     result = Math.max(operand1, operand2);
     break;
