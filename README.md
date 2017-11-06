@@ -4,7 +4,7 @@ This is a Polish Calculator. U can calculate stuff with it. Feel free to calcula
 ## How to Run
 node Starting point(index.js) parameter1 + parameter2
 
-    $ node index.js 3 1 +
+    $ node src/index.js 3 1 +
 
 
 ## How to Test
