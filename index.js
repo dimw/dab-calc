@@ -16,6 +16,32 @@ switch (operator) {
   case '+':
     result = operand1 + operand2;
     break;
+
+    // Potentiation
+  case '^':
+    result = Math.pow(operand1, operand2);
+    break;
+    
+  // Subtraction
+  case '-':
+    result = operand1 - operand2;
+    break;
+
+  // Divison
+  case '/':
+    result = operand1 / operand2;
+    break;
+
+  // Min function
+  case 'min':
+    result = Math.min(operand2, operand1);
+    break;
+
+  // Max-function
+  case 'max':
+    result = Math.max(operand1, operand2);
+    break;
+
   default:
     console.error('Not implemented:', operator);
 }
