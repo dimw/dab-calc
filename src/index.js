@@ -3,6 +3,8 @@
  */
 const plus = require('./operators/plus');
 const division = require('./operators/division');
+const minus = require('./operators/minus');
+
 
 const myArgs = process.argv.slice(2);
 
@@ -25,8 +27,7 @@ switch (operator) {
     break;
 
   case '-':
-    // Subtraction
-    result = operand1 - operand2;
+    result = minus(operand1, operand2);
     break;
 
   case '/':
