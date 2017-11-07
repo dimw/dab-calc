@@ -1,44 +1,45 @@
 /**
  * Reverse Polish Notation Calculator
  */
+const plus = require('./operators/plus');
 
-var myArgs = process.argv.slice(2);
+const myArgs = process.argv.slice(2);
 
-var operand1 = parseInt(myArgs[0]);
-var operand2 = parseInt(myArgs[1]);
-var operator = myArgs[2];
+const operand1 = parseInt(myArgs[0], 10);
+const operand2 = parseInt(myArgs[1], 10);
+const operator = myArgs[2];
 
 console.log('Calculating:', operand1, operand2, operator);
 
-var result;
+let result;
 
 switch (operator) {
   case '+':
-    result = operand1 + operand2;
+    result = plus(operand1, operand2);
     break;
 
-    // Potentiation
   case '^':
-    result = Math.pow(operand1, operand2);
+    // Potentiation
+    result = operand1 ** operand2;
     break;
-    
-  // Subtraction
+
   case '-':
+    // Subtraction
     result = operand1 - operand2;
     break;
 
-  // Divison
   case '/':
+    // Divison
     result = operand1 / operand2;
     break;
 
-  // Min function
   case 'min':
+    // Min function
     result = Math.min(operand2, operand1);
     break;
 
-  // Max-function
   case 'max':
+    // Max-function
     result = Math.max(operand1, operand2);
     break;
 
