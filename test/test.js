@@ -1,6 +1,7 @@
 var chai = require('chai');
 var expect = chai.expect;
 
+const divide = require('../src/operators/division');
 const minus = require('../src/operators/minus');
 
 
@@ -39,9 +40,22 @@ describe('Foo Tests', () => {
     // When
     const actualResult = parseInt(s, radix);
     // Then
-    console.log(`actualResult = ${actualResult}`);
     expect(actualResult).to.equal(9);
   });
+
+  describe('4 divided by 2', () => {
+    it('should be 2', () => {
+      const result = divide(4, 2);
+
+      expect(result).to.equal(2);
+    });
+  });
+  
+  describe('4 divided by -2', () => {
+    it('should be -2', () => {
+      const result = divide(4, -2);
+
+      expect(result).to.equal(-2);
   it('5 minus 5 should return 0', () => {
     // Arrange
     const m = 5;
@@ -51,12 +65,9 @@ describe('Foo Tests', () => {
     expect(actualResult).to.equal(0);
     describe('Negative substraction', () => {
       it('5 minus 10 should return -5', () => {
-        // Arrange
         const m = 5;
         const m2 = 10;
-        // Act
         const vrrrr = minus(m, m2);
-        // Assert
         expect(vrrrr).to.equal(-5);
       });
     });

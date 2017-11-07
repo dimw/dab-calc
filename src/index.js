@@ -2,7 +2,9 @@
  * Reverse Polish Notation Calculator
  */
 const plus = require('./operators/plus');
+const division = require('./operators/division');
 const minus = require('./operators/minus');
+
 
 const myArgs = process.argv.slice(2);
 
@@ -30,7 +32,7 @@ switch (operator) {
 
   case '/':
     // Divison
-    result = operand1 / operand2;
+    result = division(operand1, operand2);
     break;
 
   case 'min':
