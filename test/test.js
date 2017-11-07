@@ -1,6 +1,8 @@
 var chai = require('chai');
 var expect = chai.expect;
 
+const divide = require('../src/operators/division');
+
 function foo(x) {
   return x * x;
 }
@@ -37,11 +39,22 @@ describe('Foo Tests', () => {
     const actualResult = parseInt(s, radix);
 
     // Then
-    console.log(`actualResult = ${actualResult}`);
     expect(actualResult).to.equal(9);
   });
 
-  it("divide ", function() {
-    
+  describe('4 divided by 2', () => {
+    it('should be 2', () => {
+      const result = divide(4, 2);
+
+      expect(result).to.equal(2);
+    });
+  });
+
+  describe('4 divided by -2', () => {
+    it('should be -2', () => {
+      const result = divide(4, -2);
+
+      expect(result).to.equal(-2);
+    });
   });
 });
